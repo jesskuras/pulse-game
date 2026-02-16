@@ -8,7 +8,7 @@
 PRODUCT_NAME = lucky_game
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.jesskuras.luckyGame
+PRODUCT_BUNDLE_IDENTIFIER = com.jesskuras.hextra
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2026 com.jesskuras. All rights reserved.

@@ -29,7 +29,7 @@ class ShareCard extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           const Text(
-            'PULSE',
+            'HEXTRA',
             style: TextStyle(
               fontSize: 32,
               fontWeight: FontWeight.bold,
@@ -60,7 +60,7 @@ class ShareCard extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           const Text(
-            'Download Pulse in the App Store',
+            'Download Hextra in the App Store',
             style: TextStyle(color: Colors.white24, fontSize: 10),
           ),
         ],

@@ -27,21 +27,15 @@ class StatsOverlay extends StatelessWidget {
     try {
       // Capture the pretty image
       final imageBytes = await screenshotController.captureFromWidget(
-        MaterialApp(
-          debugShowCheckedModeBanner: false,
-          theme: ThemeData(
-            brightness: Brightness.dark,
-            scaffoldBackgroundColor: const Color(0xFF0A0E21),
-            fontFamily: 'Inter',
-          ),
-          home: Scaffold(
-            body: Center(
-              child: ShareCard(
-                luck: luck,
-                logic: logic,
-                speed: speed,
-                date: dateString,
-              ),
+        Directionality(
+          textDirection: TextDirection.ltr,
+          child: Theme(
+            data: ThemeData(brightness: Brightness.dark, fontFamily: 'Inter'),
+            child: ShareCard(
+              luck: luck,
+              logic: logic,
+              speed: speed,
+              date: dateString,
             ),
           ),
         ),
@@ -50,7 +44,7 @@ class StatsOverlay extends StatelessWidget {
       );
 
       // Share the bytes directly via XFile.fromData (web & mobile compatible)
-      final String text = 'Connect with your intuition. Scan the pulse: TBD';
+      final String text = 'Connect with your intuition. Scan the Hextra: TBD';
 
       await Share.shareXFiles([
         XFile.fromData(

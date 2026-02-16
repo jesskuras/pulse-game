@@ -78,7 +78,7 @@ class _GameScreenState extends State<GameScreen> {
                   children: [
                     const SizedBox(width: 48), // Spacer for centering
                     Text(
-                      'PULSE',
+                      'HEXTRA',
                       style: Theme.of(context).textTheme.displaySmall?.copyWith(
                         color: Colors.white,
                         fontWeight: FontWeight.w900,

@@ -20,11 +20,11 @@ class TutorialOverlay extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'HOW TO PLAY',
-                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                    'HEXTRA',
+                    style: Theme.of(context).textTheme.displayLarge?.copyWith(
                       color: Colors.white,
                       fontWeight: FontWeight.w900,
-                      letterSpacing: 4,
+                      letterSpacing: 12,
                     ),
                   ),
                   IconButton(
