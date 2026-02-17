@@ -44,7 +44,10 @@ class StatsOverlay extends StatelessWidget {
       );
 
       // Share the bytes directly via XFile.fromData (web & mobile compatible)
-      final String text = 'Connect with your intuition. Scan the Hextra: TBD';
+      final String text =
+          'Connect with your intuition. Scan the Hextra!\n'
+          'iOS: https://apps.apple.com/us/app/hextra/id6759270534\n'
+          'Android: https://play.google.com/store/apps/details?id=com.jesskuras.hextra';
 
       await Share.shareXFiles([
         XFile.fromData(
